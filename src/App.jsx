@@ -12,7 +12,7 @@ function App() {
   const scrapeNow = async () => {
     setLoading(true);
     try {
-      const res = await axios.get("http://localhost:5000/scrape");
+      const res = await axios.get("https://xpcloud.onrender.com/scrape");
       setArticles(res.data);
     } catch (err) {
       console.error("Scrape failed", err);
