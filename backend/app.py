@@ -12,6 +12,10 @@ client = MongoClient("mongodb+srv://spandandeb:spandan@cluster0.wu7te.mongodb.ne
 db = client["books_db"]
 collection = db["books"]
 
+@app.route('/')
+def home():
+    return 'XPCloud backend is running '
+
 @app.route('/scrape', methods=['GET'])
 def scrape():
     url = 'https://books.toscrape.com/'
