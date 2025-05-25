@@ -8,7 +8,7 @@ app = Flask(__name__)
 CORS(app, origins=["http://localhost:5173"])
 
 # MongoDB connection
-client = MongoClient("mongodb+srv://spandandeb:123@cluster0.wu7te.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+client = MongoClient("mongodb+srv://spandandeb:spandan@cluster0.wu7te.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 db = client["books_db"]
 collection = db["books"]
 
