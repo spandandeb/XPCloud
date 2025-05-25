@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 from pymongo import MongoClient
 
 app = Flask(__name__)
-CORS(app, origins=["http://localhost:5173"])
+CORS(app, origins=["http://localhost:5173","https://xp-cloud.vercel.app"])
 
 # MongoDB connection
 client = MongoClient("mongodb+srv://spandandeb:spandan@cluster0.wu7te.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
