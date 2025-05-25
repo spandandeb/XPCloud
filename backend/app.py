@@ -3,7 +3,6 @@ from flask_cors import CORS
 import requests
 from bs4 import BeautifulSoup
 from pymongo import MongoClient
-from bson import ObjectId
 
 app = Flask(__name__)
 CORS(app, origins=["http://localhost:5173"])
