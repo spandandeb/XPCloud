@@ -23,7 +23,7 @@ function App() {
   const handleLogin = (e) => {
     e.preventDefault();
     // Simple hardcoded login for demonstration
-    if (username === "spandan" && password === "123") {
+    if (username === "spandan" && password === "1234") {
       setLoggedIn(true);
       setLoginError("");
     } else {
